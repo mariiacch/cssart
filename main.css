@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  background-image: radial-gradient(#9cdce0, #9cd4e0);
+}
+
+.container {
+  display: block;
+  width: 185px;
+  height: 370px;
+  margin-left: 320px;
+  margin-right: auto;
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+
+  transform: translateY(-10px);
+  box-shadow: inset 0 -4px 7px rgba(0, 0, 0, 0.4);
+
+  background-image: 
+  linear-gradient(
+    135deg,
+   
+    #f3f1ee 14px,
+    #ebe8e5 18px
+);
+z-index: -1;
+background-size: 200px;
+/*background-position: top left,bottom right;*/
+
+background-repeat: no-repeat;
+  border-radius: 30px;
+  
+}
+.f1,.f2,.f3{
+  position: absolute;
+  border: 1px solid rgba(207, 206, 206, 0.4);
+  width: 10px;
+  height: 180px;
+  top: 70px;
+  left: 17px;
+transform: rotate(-50deg);
+  box-shadow: 0 0 9px white;
+  background-color: rgba(204, 200, 200, 0.4);
+  clip-path: polygon(0 1%, 43% 0, 86% 100%, 34% 100%);
+  z-index: -1;
+  
+}
+.f2{
+  left: 25px;
+  transform: rotate(50deg);
+top: 110px;
+}
+.f3{
+  left: 25px;
+  top: 200px;
+}
+.camera {
+  position: absolute;
+
+  left: 20px;
+  display: block;
+  width: 40px;
+  height: 65px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 7px;
+
+  background-image: linear-gradient(90deg, #474548 90%, #343233 90%),
+    linear-gradient(90deg, #0e090d 10%, #4a4849 10%),
+    linear-gradient(
+      #4c4a4d 4%,
+      #161214 9% 20%,
+      #484445 30% 55%,
+      #1a1617 80% 93%,
+      #b0afad 99%
+    );
+
+  background-size: 3px 100%, 3px 100%, 100% 100%;
+  background-repeat: no-repeat;
+
+  background-position: top left, top right;
+}
+
+.len1 {
+  position: absolute;
+
+  left: 48px;
+  top: 50px;
+  width: 5px;
+  height: 5px;
+  background: linear-gradient(to bottom, #7a7a7a, #d4d6d6);
+  border-radius: 13px;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.05), 0 0 0 1px grey;
+}
+.len1::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 15px;
+  width: 15px;
+  height: 14px;
+  border-radius: 50%;
+  background-image: radial-gradient(transparent, #000000),
+    radial-gradient(rgba(51, 53, 54, 0.4), transparent),
+    radial-gradient(
+      #2a282b 10% 27%,
+      /* dark body 4 */ #c5e4c5 35% 2%,
+      /* outer */ #131114 87% 59%,
+      /* shadow */ #3c3a3d 59% 6%,
+      /* highlight */ #242323 60%,
+      rgb(145, 144, 144) 50%,
+      #b1aeae 60% /* outer */
+    );
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.05), 0 0 0 1px grey;
+}
+.len1::after {
+  position: absolute;
+  content: "";
+  left: -25px;
+  top: -3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-image: radial-gradient(transparent, #000000),
+    radial-gradient(rgba(51, 53, 54, 0.4), transparent),
+    radial-gradient(
+      #2a282b 10% 27%,
+       #323332 27.5% 2%,
+      /* outer */ #131114 57% 59%,
+       #3c3a3d 59% 6%,
+       #241e1e 60%,
+      rgb(145, 144, 144) 50%,
+      #b1aeae 60% /* outer */
+    );
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.05), 0 0 0 1px grey;
+}
+
+.len2,
+.len2::before {
+  position: absolute;
+  left: -7px;
+  top: 14px;
+
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(240, 238, 238);
+
+  background-image: radial-gradient(transparent, #000000),
+    radial-gradient(rgba(51, 53, 54, 0.4), transparent),
+    radial-gradient(
+      #2a282b 10% 27%,
+       #323332 27.5% 2%,
+      /* outer */ #131114 57% 59%,
+       #3c3a3d 59% 6%,
+       #241e1e 60% /* outer */
+    );
+
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.05), 0 0 0 1px grey;
+}
+.len2::before {
+  content: "";
+  top: -35px;
+  left: -17px;
+}
+.container2 {
+  display: block;
+  width: 185px;
+  height: 370px;
+
+  position: absolute;
+  left: 450px;
+  top: 40px;
+  box-shadow: inset 5px -5px 1px rgba(0, 0, 0, 0.726),
+    inset -5px 5px 1px rgba(0, 0, 0, 0.726),
+    inset 3px -3px 5px rgba(253, 252, 252, 0.7);
+background-image: url(fondo.jpg);
+ 
+  border-radius: 30px;
+  background-image: cover;
+  
+  background-size: 280px;
+  background-repeat: no-repeat;
+}
+
+.len3{
+  position: absolute;
+
+  left: 78px;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(to top, #aaa8a8, #1d1d1d);
+  border-radius: 13px;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.05), 0 0 0 1px rgb(90, 90, 90);
+}
+.logo > img{
+ 
+ position: absolute;
+ width: 60px;
+ height: 65px;
+top: 180px;
+  left: 5px;
+  
+}
